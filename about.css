@@ -1,0 +1,277 @@
+body {
+    background: #000;
+    background-image: url("tom-the-photographer-8f3PAgbaSpw-unsplash.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    max-height: 100vh;
+    overflow-x: hidden;
+    z-index: -1;
+  }
+
+  .text-style-1, .text-style-2 {
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 30px;
+    letter-spacing: 1px;
+    font-family: 'Merriweather', serif;
+    text-align: justify;
+  }
+
+  .text-style-1 {
+      color: whitesmoke;
+  }
+
+  .text-style-2 {
+      color: whitesmoke;
+  }
+
+  .text-style-2>span {
+      font-weight: 500;
+  }
+
+  .About-img {
+      margin-top: auto;
+      margin-bottom: auto;
+  }
+
+  .About-section-row-1,  .About-section-row-2  {
+      margin-top: 5vh;
+      margin-bottom: 5vh;
+  }
+
+  .intro-text {
+      margin-top: auto;
+      margin-bottom: auto;
+      justify-content: center;
+  }
+
+  .My-skills {
+      color: aqua;
+      text-align: center;
+      margin-bottom: 30px;
+      text-decoration-style: wavy;
+      font-size: 40px;
+  }
+
+  .progress-text {
+      color: whitesmoke;
+  }
+
+  .progress {
+      padding: auto;
+      margin-top: 20px;
+      margin-bottom: 20px;
+  }
+
+  @media screen and (max-width:768px) {
+    .About-img {
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 20px;
+    }
+  }
+  
+  @media screen and (max-width:400px) {
+    .text-style-1, .text-style-2 {
+        font-size: 12px;
+        font-weight: 100;
+        line-height: 16px;
+        letter-spacing: 0.5px;        
+      }
+  }
+
+
+  .About-section-row-3 {
+      margin-top: 15vh;
+  }
+
+  .Projects-intro h4, .Education-intro h4 {
+    color: whitesmoke;
+    font-size: 20px;
+  }
+
+  .Projects-intro , .Education-intro {
+    text-align: center;
+  }
+
+  .About-buttons .Education {
+      background-color: #2a2a72;
+      background-image: linear-gradient(315deg, #2a2a72 0%, #009ffd 74%);
+      background-clip: padding-box;
+      color: whitesmoke;
+      transition: background .5s ease;
+      box-shadow: 5px 3px 3px rgb(136, 136, 231);
+      margin-top: 3vh;
+      margin-bottom: 60px;
+      margin-left: 40%;
+  }
+
+  .About-buttons .My-projects {
+    background-color: #2a2a72;
+    background-image: linear-gradient(315deg, #2a2a72 0%, #009ffd 74%);
+    background-clip: padding-box;
+    color: whitesmoke;
+    transition: background .5s ease;
+    box-shadow: 5px 3px 3px rgb(136, 136, 231);
+    margin-top: 3vh;
+    margin-bottom: 60px;
+    margin-left: 40%;
+   }
+
+   .About-buttons .Education:hover {
+       background: whitesmoke;
+       background-clip: padding-box;
+       color: black;
+   }
+
+   .About-buttons .Education::after {
+       position: absolute;
+       top: -2px; left: -2px; bottom: -2px; right: -2px;
+       content: '';
+       z-index: -1;
+       border-radius: 4px;
+   }
+
+   .About-buttons .My-projects:hover {
+        background: whitesmoke;
+        background-clip: padding-box;
+        color: black;
+    }
+
+    .About-buttons .My-projects::after {
+        position: absolute;
+        top: -2px; left: -2px; bottom: -2px; right: -2px;
+        content: '';
+        z-index: -1;
+        border-radius: 4px;
+    }
+
+  /* Footer Area Starts */
+    .footer-content {
+        max-width: 60vw;
+        max-height: 1.5vh;
+        background: white;
+    }
+
+    .footer-img {
+        margin: 0cm;
+        padding-bottom: 0cm;
+    }
+
+    .footer-content .row {
+        margin: 0px;
+        padding: 2px;
+    }
+
+    .footer-icons  {
+        font-size: 30px;
+        padding: 2rem;
+        color: aqua;        
+    }
+
+    .footer-icons>i {
+        padding: 5px;
+        margin-left: 5px;
+    }
+
+    .footer-text {
+        color: whitesmoke;
+        text-transform: uppercase;
+        text-align: center;
+        margin: 0cm;
+        padding: 0cm;
+    }
+
+    .copyrights {
+        margin-top: 0cm;
+        color: whitesmoke;
+        text-align: center;
+    }
+
+    @media screen and (max-width:576px) {
+        .footer-icons {
+            text-align: center;
+        }
+    }
+
+    .back-to-top {
+        font-size: 25px;
+        padding: 2rem;
+        color: rgb(125, 240, 240);
+        padding: px;
+        margin-left: 5px;
+        margin-bottom: 10px;
+    } 
+
+  /* Footer Area Ends */
+
+  /* Navbar Area Starts */
+
+  .p-head {
+      font-size: 20px;
+  }
+
+ .vertical-nav {
+    min-width: 14rem;
+    width: 14rem;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.1);
+    transition: all 0.4s;
+  }
+  .page-content {
+    width: calc(100% - 17rem);
+    margin-left: 17rem;
+    transition: all 0.4s;
+  } 
+  
+  #sidebar.active {
+    margin-left: -17rem;
+  }
+  
+  #content.active {
+    width: 100%;
+    margin: 0;
+  }
+  
+  .separator {
+    margin: 3rem 0;
+    border-bottom: 1px dashed #fff;
+  }
+  
+  .text-uppercase {
+    letter-spacing: 0.1em;
+  }
+  .text-gray {
+    color: #aaa;
+  }
+  .nav-link{
+      text-transform: capitalize;
+  }
+  .nav-link:hover{
+      background:#f3f2f2;
+  }
+  .text-primary{
+      color:#7579e7 !important;
+  }
+
+  @media (max-width: 768px) {
+    #sidebar {
+      margin-left: -17rem;
+    }
+    #sidebar.active {
+      margin-left: 0;
+    }
+    #content {
+      width: 100%;
+      margin: 0;
+    }
+    #content.active {
+      margin-left: 17rem;
+      width: calc(100% - 17rem);
+    }
+  }
+
+  /* Navbar Area Ends */
