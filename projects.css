@@ -1,8 +1,8 @@
- * {
-   transition: all ease 1s;
- }
- 
- body {
+* {
+    transition: all ease 1s;
+  }
+
+body {
     background: #000;
     background-image: url("background-laptop.jpg");
     background-repeat: no-repeat;
@@ -16,90 +16,39 @@
     font-family: 'Source Sans Pro', sans-serif;
   }
 
-  .Home-section {
-      margin-bottom: 20vh;
-  }
-
-  .Home-section .Home-section-row-1 .greet-text h3 {
-    padding-top: 30%;
-    font-weight: 500;
-    color: #f3f2f2;
-  }
-
-  .Home-section .Home-section-row-1 .greet-text h3::after {
-      content: "";
-      height: 2px;
-      width: 18vw;
-      background: white;
-      display: inline-block;
-      margin-left: 5%;
-      transform: translateY(-10px);
-  } 
-
-  .Home-section .Home-section-row-1 .greet-text h1 {
-    font-size: 3rem;
-    color: #f3f2f2;
-  }
-
-  .Home-section .Home-section-row-1 .greet-text h4 {
-    font-size: 1.5rem;
-    color: #f3f2f2;
+  .head-text {
+    color: aqua;
+    text-align: center;
     margin-bottom: 30px;
+    text-decoration-style: wavy;
+    font-size: 40px;
   }
 
-  .Home-section .Home-section-row-1>img {
-      padding: 7rem 0;
-      width: 75rem;
+  .project_container-2 p, .project_container-3 p {
+      color: rgb(41, 39, 39);
   }
 
-
-  .Home-buttons .Know-More {
-      background-color: #2a2a72;
-      background-image: linear-gradient(315deg, #2a2a72 0%, #009ffd 74%);
-      background-clip: padding-box;
-      color: whitesmoke;
-      transition: background .5s ease;
-      box-shadow: 5px 3px 3px rgb(136, 136, 231);
-      margin-bottom: 60px;
+  .project-description a {
+      text-decoration: none;
   }
 
-  .Home-buttons .Download-CV {
-    background-color: #2a2a72;
-    background-image: linear-gradient(315deg, #2a2a72 0%, #009ffd 74%);
-    background-clip: padding-box;
-    color: whitesmoke;
-    transition: background .5s ease;
-    box-shadow: 5px 3px 3px rgb(136, 136, 231);
-    margin-bottom: 60px;
-   }
+  .project-description a h3 {
+    color: red;
+  }
 
-   .Home-buttons .Know-More:hover {
-       background: whitesmoke;
-       background-clip: padding-box;
-       color: black;
-   }
+  .project-description {
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      justify-content: center;
+  }
 
-   .Home-buttons .Know-More::after {
-       position: absolute;
-       top: -2px; left: -2px; bottom: -2px; right: -2px;
-       content: '';
-       z-index: -1;
-       border-radius: 4px;
-   }
-
-   .Home-buttons .Download-CV:hover {
-        background: whitesmoke;
-        background-clip: padding-box;
-        color: black;
-    }
-
-    .Home-buttons .Download-CV::after {
-        position: absolute;
-        top: -2px; left: -2px; bottom: -2px; right: -2px;
-        content: '';
-        z-index: -1;
-        border-radius: 4px;
-    }
+  @media screen and (max-width:500px) {
+      .project-description h3 {
+          font-size: 20px;
+      }
+  }
+  
 
   /* Footer Area Starts */
     .footer-content {
@@ -162,7 +111,7 @@
 
   /* Navbar Area Starts */
 
-  a[href="index.html"] {
+  a[href="projects.html"] {
     font-weight: 700 !important;
     color: rgb(255, 0, 21) !important;
     background-color: antiquewhite !important;
